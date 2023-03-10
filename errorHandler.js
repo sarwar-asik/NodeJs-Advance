@@ -9,8 +9,17 @@ function errorHandler(error) {
   //     stack
   //   })
   //   console.log(logger);
-}
 
+}
+const function2 =()=>{
+    console.log("FUnc two for exports");
+}
 // console.log(module.exports);
 
-module.exports = errorHandler
+// module.exports.errorHandler = errorHandler
+// module.exports.function2 = function2 
+// or //
+
+module.exports ={ errorHandler,function2}
+
+// console.log(module);

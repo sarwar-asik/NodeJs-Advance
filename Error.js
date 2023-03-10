@@ -1,4 +1,7 @@
-console.log(",,,,,,,,,Error.js connected //////");
+const {errorHandler,function2} = require('./errorHandler.js');
+
+// console.log(",,,,,,,,,Error.js connected //////");
+
 
 async function getData() {
   try {
@@ -12,13 +15,13 @@ async function getData() {
 }
 getData();
 
-function errorHandler(error) {
-  const { name, message, stack } = error;
-  console.table({ name, message, stack },"and", error);
-  //  const logger= error({
-  //     name,
-  //     message,
-  //     stack
-  //   })
-  //   console.log(logger);
-}
+// function errorHandler(error) {
+//   const { name, message, stack } = error;
+//   console.table({ name, message, stack },"and", error);
+//   //  const logger= error({
+//   //     name,
+//   //     message,
+//   //     stack
+//   //   })
+//   //   console.log(logger);
+// }
